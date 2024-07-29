@@ -1,0 +1,179 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #6E7674;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding-top: 0;
+    border-top: 0;
+    z-index: 999;
+}
+
+header p{
+    margin-right: 30px;
+}
+
+header p a {
+    color: #fff;
+}
+
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in;
+}
+
+h1,
+h2,
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    bottom: 0;
+    animation: fadeIn 1s ease-in;
+}
+
+.portfolio-item {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in forwards;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+#social {
+    height: 200px;
+}
+
+#social p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+article {
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in forwards;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    header,
+    footer {
+        padding: 10px;
+    }
+
+    nav {
+        margin: 10px 0;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel-images img {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    header h1 {
+        font-size: 18px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+.wechat {
+    float: left;
+    padding-left: 420px;
+}
+
+.jlufe {
+    float: right;
+    padding-right: 420px;
+}
